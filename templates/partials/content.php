@@ -1,3 +1,5 @@
+<?php get_template_part( 'templates/partials/header'); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?>>
 
 	<header class="">
