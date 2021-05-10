@@ -20,6 +20,11 @@ module.exports = {
                 challenger: {
                     'default': '#fd2849'
                 },
+                offwhite: {
+                    'default': '#e1dece',
+                    '400': '#ebe9df',
+                    '500': '#e1dece'
+                },
                 link: {
                     'default': '#3182ce',
                     'hover': '#63b3ed',

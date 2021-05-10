@@ -9,8 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600&display=swap" rel="stylesheet">   
-    
+
     <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');</script>
 	<?php wp_head() ?>
 </head>
-<body <?php body_class() ?>>
+<body <?php body_class('bg-offwhite-400') ?>>
