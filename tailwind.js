@@ -14,6 +14,9 @@ module.exports = {
         },
         extend: {
             colors: {
+                progressive: {
+                    'default': '#500b30'
+                },
                 link: {
                     'default': '#3182ce',
                     'hover': '#63b3ed',
