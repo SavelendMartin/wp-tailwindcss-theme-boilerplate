@@ -1,5 +1,7 @@
-<header class="bg-progressive py-2">
-    <div class="text-center">SaveLend Group</div>
+<header class="">
+    <div class="text-center bg-progressive py-2">
+        SaveLend Group
+    </div>
 
     <nav class="bg-challenger">
         <button>Länk 1</button>
