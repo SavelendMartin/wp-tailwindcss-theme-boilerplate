@@ -17,6 +17,9 @@ module.exports = {
                 progressive: {
                     'default': '#500b30'
                 },
+                challenger: {
+                    'default': '#fd2849'
+                },
                 link: {
                     'default': '#3182ce',
                     'hover': '#63b3ed',
