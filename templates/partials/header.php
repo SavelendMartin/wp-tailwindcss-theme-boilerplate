@@ -3,8 +3,8 @@
         <img src="https://savelendgroup.se/wp-content/uploads/2021/04/savelend_group_darkbg-1.png" width="250" alt="SaveLend Group" class="mx-auto"/>
     </div>
 
-    <?php echo wp_nav_menu([
-    'menu'              => "main-menu", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
+    <?php wp_nav_menu([
+    'menu'              => "Main Menu", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
     'menu_class'        => "", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
     'menu_id'           => "", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
     'container'         => "nav", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
@@ -14,7 +14,7 @@
     'after'             => "", // (string) Text after the link markup.
     'link_before'       => "", // (string) Text before the link text.
     'link_after'        => "", // (string) Text after the link text.
-    'echo'              => "true", // (bool) Whether to echo the menu or return it. Default true.
+    'echo'              => true, // (bool) Whether to echo the menu or return it. Default true.
     'depth'             => "0", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
     //'theme_location'    => "main", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
     'items_wrap'        => "", // (string) How the list items should be wrapped. Default is a ul with an id and class. Uses printf() format with numbered placeholders.
