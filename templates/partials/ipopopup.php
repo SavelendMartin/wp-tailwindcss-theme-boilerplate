@@ -41,9 +41,37 @@
             Disclaimer
             </h3>
             <div class="mt-2">
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-gray-700">
               Informationen på denna del av SaveLend Groups webbplats är begränsad och får inte, direkt eller indirekt, helt eller delvis, offentliggöras, publiceras eller distribueras inom eller till USA, Australien, Hongkong, Japan, Kanada, Nya Zeeland, Singapore, Sydafrika eller någon annan jurisdiktion där sådant offentliggörande, publicering eller distribution skulle vara olaglig eller kräva ytterligare registrering eller andra åtgärder än vad som krävs enligt svensk lag.
               </p>
+
+              <label class="font-bold mb-2 uppercase">Ange det land du är bosatt i:</label>
+              <select class="w-full mb-8">
+                <option value="">Sverige</option>
+                <option value="">USA</option>
+                <option value="">Australien </option>
+                <option value="">Hongkong</option>
+                <option value="">Japan </option>
+                <option value="">Kanada</option>
+                <option value="">Nya Zeeland </option>
+                <option value="">Singapore</option>
+                <option value="">Sydafrika</option>
+                <option value="">Övriga länder</option>
+              </select>
+
+              <label class="font-bold mb-2 uppercase">Ange det land du befinner dig i:</label>
+              <select class="w-full mb-8">
+                <option value="">Sverige</option>
+                <option value="">USA</option>
+                <option value="">Australien </option>
+                <option value="">Hongkong</option>
+                <option value="">Japan </option>
+                <option value="">Kanada</option>
+                <option value="">Nya Zeeland </option>
+                <option value="">Singapore</option>
+                <option value="">Sydafrika</option>
+                <option value="">Övriga länder</option>
+              </select>
             </div>
           </div>
         </div>
@@ -53,7 +81,7 @@
           Fortsätt
         </button>
         <button type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
-          Cancel
+          Avbryt
         </button>
       </div>
     </div>
