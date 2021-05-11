@@ -10,22 +10,9 @@
 
 get_header();
 
-	while ( have_posts() ) : the_post();
-
-		?><article id="post-<?php the_ID(); ?>"  <?php post_class( 'prose mx-auto py-12' ); ?>><?php
-			the_content();
-			wp_link_pages( array(
-				'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'kava' ),
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-			) );
-		?></article><!-- #post-<?php the_ID(); ?> --><?php
-
-	endwhile; // End of the loop.
 ?>
 
-<div id="press"></div>
+<div id="press" class="prose mx-auto py-12"></div>
 
 <script type="application/javascript">
     // Implements the MFN-JS Loader javascript file
