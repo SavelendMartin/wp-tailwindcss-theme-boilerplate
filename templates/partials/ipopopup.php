@@ -165,18 +165,33 @@
 </div>
 
 <script>
+function getCookie(name) {
+    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+    return v ? v[2] : null;
+}
+
+function setCookie(name, value, days) {
+    var d = new Date;
+    d.setTime(d.getTime() + 24*60*60*1000*days);
+    document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
+}
+
 var modal = document.getElementById('modal');
 var popup1 = document.getElementById('popup1');
 var popup2 = document.getElementById('popup2');
 var popup3 = document.getElementById('popup3');
 
 var country1 = document.getElementById('country1');
-var country2 = document.getElementById('country1');
+var country2 = document.getElementById('country2');
 
 var acceptCheck = document.getElementById('acceptCheck');
 
 var continueBtn = document.getElementById('continue');
 var acceptBtn = document.getElementById('accept');
+
+if(getCookie('ipoaccepted')) {
+    modal.classList.add('hidden');
+}
 
 continueBtn.addEventListener('click', function(){
     var country1val = country1.value;
@@ -195,6 +210,8 @@ continueBtn.addEventListener('click', function(){
 acceptBtn.addEventListener('click', function(){
     if(acceptCheck.checked) {
         modal.classList.add('hidden');
+
+        setCookie('ipoaccepted', 1, 1);
     }
     else {
        
