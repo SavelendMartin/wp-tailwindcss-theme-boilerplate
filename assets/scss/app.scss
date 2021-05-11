@@ -178,3 +178,28 @@
       white-space: nowrap;
     }
   }
+
+
+.mfn-toolbar {
+    @apply flex justify-between items-center mb-12;
+}
+
+  .mfn-row {
+      @apply mb-8
+  }
+
+  .mfn-date {
+      @apply text-sm;
+  }
+
+  .mfn-title {
+      @apply font-semibold mb-2 text-2xl;
+  }
+
+  .mfn-sub-row {
+      @apply hidden;
+  }
+
+  .mfn-preamble {
+
+  }
