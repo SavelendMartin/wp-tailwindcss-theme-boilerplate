@@ -6,5 +6,5 @@
 
 ?>
 
-<div class="w-full bg-cover bg-no-repeat h-96 bg-center relative" style="background-image: url('<?php block_field( 'image-background', true ); ?>')">
+<div class="w-full bg-cover bg-no-repeat h-64 md:h-80 bg-center relative" style="background-image: url('<?php block_field( 'image-background', true ); ?>')">
 </div>
