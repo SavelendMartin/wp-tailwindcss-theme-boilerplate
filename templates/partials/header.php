@@ -3,8 +3,7 @@
         <img src="https://savelendgroup.se/wp-content/uploads/2021/04/savelend_group_darkbg-1.png" width="250" alt="SaveLend Group" class="mx-auto"/>
     </div>
 
-    <nav class="">
-    wp_nav_menu( array $args = array(
+    <?php wp_nav_menu( array $args = array(
     'menu'              => "2", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
     'menu_class'        => "", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
     'menu_id'           => "", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
@@ -21,6 +20,5 @@
     'walker'            => "", // (object) Instance of a custom walker class.
     'items_wrap'        => "", // (string) How the list items should be wrapped. Default is a ul with an id and class. Uses printf() format with numbered placeholders.
     'item_spacing'      => "", // (string) Whether to preserve whitespace within the menu's HTML. Accepts 'preserve' or 'discard'. Default 'preserve'.
-) );
-    </nav>
+) ); ?>
 </header>
