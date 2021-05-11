@@ -110,10 +110,18 @@
                             <p class="text-sm text-gray-700 mb-4">Materialet på denna del av webbplatsen får endast distribueras till, och är endast avsedd för, personer i Storbritannien som är "kvalificerade investerare" i enlighet med Prospektförordningen såsom den införlivas i nationell rätt i Storbritannien genom the European Union (Withdrawal) Act 2018, och som är: (i) professionella investerare som omfattas av artikel 19(5) i Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 i dess nuvarande lydelse ("Ordern"); (ii) omfattas av artikel 49(2)(a) – (d) i Ordern; eller (iii) andra personer som lagligen kan ta del av informationen (samtliga sådana personer benämns tillsammans som "Relevanta Personer"). I Storbritannien är materialet som du önskar tillgång till endast riktat till Relevanta Personer och personer som inte är Relevanta Personer ska inte agera utifrån eller förlita sig på detta. En investering eller en investeringsåtgärd som detta material avser är enbart tillgänglig i Storbritannien för Relevanta Personer och kommer endast att genomföras med sådana personer. Åtkomst till informationen och dokumenten på följande webbsidor kan vara olaglig i vissa jurisdiktioner, och endast vissa kategorier av personer kan tillåtas åtkomst till sådan information och sådana dokument. Samtliga personer bosatta utanför Sverige som önskar åtkomst till dokumenten på denna webbplats måste först försäkra sig om att de inte är föremål för lokala lagar eller bestämmelser som förbjuder eller inskränker deras rätt till åtkomst av denna webbplats, eller kräver registrering eller godkännande av något förvärv av Värdepapper av dem. Sådan registrering eller sådant godkännande har inte inhämtats utanför Sverige. SaveLend Group tar inget ansvar för någon persons brott mot tillämpliga lagar och bestämmelser.</p>
 
                             <p class="text-sm text-gray-700 mb-2"><strong class="font-bold">Jag intygar därför att:</strong></p>
-                            <ol class="list-decimal">
+                            <ol class="list-decimal mb-6">
                                 <li>Jag är bosatt och befinner mig utanför USA, Australien, Hongkong, Japan, Kanada, Nya Zeeland, Singapore, Sydafrika och någon annan jurisdiktion där offentliggörande och distribution, direkt eller indirekt, helt eller delvis, av informationen på denna del av webbplatsen skulle vara olaglig eller kräva ytterligare registrering eller andra åtgärder än vad som krävs enligt svensk lag, och</li>
                                 <li>Jag är bosatt och befinner mig (a) i Sverige eller (b) utanför Sverige och varje jurisdiktion som omnämns under punkten (1) ovan och, under sådana omständigheter, är jag behörig att ta del av informationen och dokumenten på denna webbplats utan begränsning enligt lag och utan att ytterligare åtgärder behöver vidtas av SaveLend Group.</li>
                             </ol>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                                <input id="comments" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                            </div>
+                            <div class="ml-3 text-sm">
+                                <label for="comments" class="font-medium text-gray-900 font-bold">Jag har läst, förstått och samtycker till att följa samtliga restriktioner som framgår ovan.</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,14 +151,6 @@
                         </h3>
                         <div class="mt-2">
                             <p class="mb-4">Informationen på denna del av SaveLend Groups webbplats är begränsad och får inte, direkt eller indirekt, helt eller delvis, offentliggöras, publiceras eller distribueras inom eller till USA, Australien, Hongkong, Japan, Kanada, Nya Zeeland, Singapore eller Sydafrika. Vi beklagar den olägenhet detta kan medföra.</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex items-center h-5">
-                                <input id="comments" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
-                            </div>
-                            <div class="ml-3 text-sm">
-                                <label for="comments" class="font-medium text-gray-900 font-bold">Jag har läst, förstått och samtycker till att följa samtliga restriktioner som framgår ovan.</label>
-                            </div>
                         </div>
                     </div>
                 </div>
