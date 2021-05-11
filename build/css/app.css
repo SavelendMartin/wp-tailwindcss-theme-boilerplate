@@ -27222,22 +27222,12 @@ svg[hidden] {
   margin: 0.25em;
   padding: 1em;
   background: transparent;
-  color: #000;
+  --text-opacity: 1;
+  color: #e1dece;
+  color: rgba(225, 222, 206, var(--text-opacity));
   font-weight: bold;
   text-decoration: none;
   font-family: inherit;
-  border-radius: 3px;
-}
-
-.clicky-menu a:hover,
-.clicky-menu button:hover {
-  background: #fff;
-}
-
-.clicky-menu a:focus,
-.clicky-menu button:focus {
-  outline: 0.125em dotted purple;
-  outline-offset: -0.125em;
 }
 
 /* Top Level Items */
@@ -27297,14 +27287,9 @@ svg[hidden] {
   margin-top: 0.25em;
   padding: 0;
   list-style: none;
-  background-color: #eee;
-  border-radius: 3px;
-}
-
-@media (min-width: 540px) {
-  .clicky-menu {
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
-  }
+  --bg-opacity: 1;
+  background-color: #e1dece;
+  background-color: rgba(225, 222, 206, var(--bg-opacity));
 }
 
 /* Responsive Submenu Behavior */
@@ -27329,6 +27314,9 @@ svg[hidden] {
   display: block;
   padding-top: 0.375em;
   padding-bottom: 0.375em;
+  --text-opacity: 1;
+  color: #500b30;
+  color: rgba(80, 11, 48, var(--text-opacity));
 }
 
 @media (min-width: 540px) {

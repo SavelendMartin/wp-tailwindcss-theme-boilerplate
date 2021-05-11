@@ -75,22 +75,21 @@
     margin: .25em;
     padding: 1em;
     background: transparent;
-    color: #000;
+    @apply text-offwhite;
     font-weight: bold;
     text-decoration: none;
     font-family: inherit;
-    border-radius: 3px;
   }
   
   .clicky-menu a:hover,
   .clicky-menu button:hover {
-    background: #fff;
-  }
+
+}
   
   .clicky-menu a:focus,
   .clicky-menu button:focus {
-    outline: .125em dotted purple;
-    outline-offset: -.125em;
+    //outline: .125em dotted purple;
+    //outline-offset: -.125em;
   }
   
   /* Top Level Items */
@@ -138,13 +137,11 @@
     margin-top: .25em;
     padding: 0;
     list-style: none;
-    background-color: #eee;
-    border-radius: 3px;
+    @apply bg-offwhite;
+    //border-radius: 3px;
   }
   @media (min-width: 540px) {
-    .clicky-menu {
-      box-shadow: 2px 4px 4px rgba(0,0,0,.2);
-    }
+      
   }
   
   /* Responsive Submenu Behavior */
@@ -166,6 +163,7 @@
     display: block;
     padding-top: .375em;
     padding-bottom: .375em;
+    @apply text-progressive;
   }
   @media (min-width: 540px) {
     .clicky-menu ul a {
