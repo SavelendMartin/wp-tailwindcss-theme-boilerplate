@@ -11,67 +11,71 @@
 /**
  * Initial state, hidden off screen
  */
- .clicky-menu ul {
+.clicky-menu ul {
     position: absolute;
     top: 100%;
     left: 0;
-    visibility: hidden; /*[1]*/
-  }
-  
-  /**
+    visibility: hidden;
+    /*[1]*/
+}
+
+/**
    * No JS fallback
    *
    * Triggers menus on hover rather than click. Supports keyboard navigation in modern browsers.
    */
-  .clicky-menu.no-js li:hover > ul {
+.clicky-menu.no-js li:hover>ul {
     visibility: visible;
-  }
-  .clicky-menu.no-js li:focus-within > ul { /*[2]*/
+}
+
+.clicky-menu.no-js li:focus-within>ul {
+    /*[2]*/
     visibility: visible;
-  }
-  
-  /**
+}
+
+/**
    * Open/Close Menu Behavior with JS
    */
-  .clicky-menu ul[aria-hidden="false"] {
+.clicky-menu ul[aria-hidden="false"] {
     visibility: visible;
-  }
-  
-  /* Prevent offscreen-submenus */
-  .clicky-menu .sub-menu--right {
+}
+
+/* Prevent offscreen-submenus */
+.clicky-menu .sub-menu--right {
     left: auto !important;
     right: 0 !important;
-  }
-  
-  /**
+}
+
+/**
    * Footnotes
    *
    * [1] Using visibility instead of display allows for easier transitions and animation of submenus
    * [2] Must be a separate ruleset so that hover works in non-modern browsers
    */
-  
-    
-  /* Hidden SVG used for down arrows */
-  svg[hidden] {
+
+
+/* Hidden SVG used for down arrows */
+svg[hidden] {
     display: none;
     position: absolute;
-  }
-  
-  .clicky-menu {
+}
+
+.clicky-menu {
     justify-content: stretch;
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-  @media (min-width: 540px) {
+}
+
+@media (min-width: 540px) {
     .clicky-menu {
-      display: flex;
+        display: flex;
     }
-  }
-  
-  /* General Link & Button Styles */
-  .clicky-menu a,
-  .clicky-menu button {
+}
+
+/* General Link & Button Styles */
+.clicky-menu a,
+.clicky-menu button {
     margin: 0 .25em;
     padding: 0.2em 1em;
     background: transparent;
@@ -79,37 +83,35 @@
     font-weight: bold;
     text-decoration: none;
     font-family: inherit;
-  }
-  
-  .clicky-menu a:hover,
-  .clicky-menu button:hover {
-
 }
-  
-  .clicky-menu a:focus,
-  .clicky-menu button:focus {
+
+.clicky-menu a:hover,
+.clicky-menu button:hover {}
+
+.clicky-menu a:focus,
+.clicky-menu button:focus {
     //outline: .125em dotted purple;
     //outline-offset: -.125em;
-  }
-  
-  /* Top Level Items */
-  .clicky-menu > li {
+}
+
+/* Top Level Items */
+.clicky-menu>li {
     position: relative;
     flex: 1 1 auto;
     display: flex;
     justify-content: stretch;
     flex-wrap: wrap;
     align-items: center;
-  }
+}
 
-  .clicky-menu li {
-      &:not(.menu-item-has-children) svg {
-          display: none;
-      }
-  }
-  
-  .clicky-menu > li > a,
-  .clicky-menu > li > button {
+.clicky-menu li {
+    &:not(.menu-item-has-children) svg {
+        display: none;
+    }
+}
+
+.clicky-menu>li>a,
+.clicky-menu>li>button {
     flex: 1 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -118,27 +120,29 @@
     font-size: inherit;
     line-height: 1.5;
     cursor: pointer;
-  }
-  @media (min-width: 540px) {
-    .clicky-menu > li > a,
-    .clicky-menu > li > button {
-      justify-content: center;
-    } 
-  }
-  
-  /* Icon */
-  .clicky-menu svg {
+}
+
+@media (min-width: 540px) {
+
+    .clicky-menu>li>a,
+    .clicky-menu>li>button {
+        justify-content: center;
+    }
+}
+
+/* Icon */
+.clicky-menu svg {
     width: 1em;
     height: 1em;
     margin-left: .5em;
-  }
-  
-  .clicky-menu [aria-expanded="true"] svg {
+}
+
+.clicky-menu [aria-expanded="true"] svg {
     transform: scaleY(-1);
-  }
-  
-  /* Submenu Styles */
-  .clicky-menu ul {
+}
+
+/* Submenu Styles */
+.clicky-menu ul {
     min-width: 100%;
     width: 12em;
     margin-top: .25em;
@@ -146,60 +150,58 @@
     list-style: none;
     @apply bg-offwhite;
     //border-radius: 3px;
-  }
-  @media (min-width: 540px) {
+}
 
-  }
-  
-  /* Responsive Submenu Behavior */
-  .clicky-menu ul[aria-hidden="false"] {
+@media (min-width: 540px) {}
+
+/* Responsive Submenu Behavior */
+.clicky-menu ul[aria-hidden="false"] {
     position: static;
     width: 100%;
     flex: 0 0 auto;
-  }
-  
-  @media (min-width: 540px) {
+}
+
+@media (min-width: 540px) {
     .clicky-menu ul[aria-hidden="false"] {
-      position: absolute;
-      width: auto;
+        position: absolute;
+        width: auto;
     }
-  }
-  
-  /* Submenu Links */
-  .clicky-menu ul a {
+}
+
+/* Submenu Links */
+.clicky-menu ul a {
     display: block;
     padding-top: .375em;
     padding-bottom: .375em;
     @apply text-progressive;
-  }
-  @media (min-width: 540px) {
+}
+
+@media (min-width: 540px) {
     .clicky-menu ul a {
-      padding: .375em 1em;
-      white-space: nowrap;
+        padding: .375em 1em;
+        white-space: nowrap;
     }
-  }
+}
 
 
 .mfn-toolbar {
     @apply flex justify-between items-center mb-12;
 }
 
-  .mfn-row {
-      @apply mb-8
-  }
+.mfn-row {
+    @apply mb-8
+}
 
-  .mfn-date {
-      @apply text-sm;
-  }
+.mfn-date {
+    @apply text-sm;
+}
 
-  .mfn-title {
-      @apply font-semibold mb-2 text-2xl;
-  }
+.mfn-title {
+    @apply font-semibold mb-2 text-2xl;
+}
 
-  .mfn-sub-row {
-      @apply hidden;
-  }
+.mfn-sub-row {
+    @apply hidden;
+}
 
-  .mfn-preamble {
-
-  }
+.mfn-preamble {}
