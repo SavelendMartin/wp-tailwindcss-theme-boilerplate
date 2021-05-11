@@ -17,16 +17,22 @@
                 </div>
                 <div class="flex flex-col">
                     <span class="font-bold text-offwhite uppercase mt-4 md:mt-0 mb-2">Footer header 3</span>
-                    <span class="my-2"><a href="#" class="v  text-md hover:text-progressive">link 1</a></span>
-                    <span class="my-2"><a href="#" class="v  text-md hover:text-progressive">link 1</a></span>
-                    <span class="my-2"><a href="#" class="v  text-md hover:text-progressive">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-offwhite text-md hover:text-progressive">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-offwhite text-md hover:text-progressive">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-offwhite text-md hover:text-progressive">link 1</a></span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-offwhite uppercase mt-4 md:mt-0 mb-2">Footer header 3</span>
+                    <span class="my-2"><a href="#" class="text-offwhite text-md hover:text-progressive">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-offwhite text-md hover:text-progressive">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-offwhite text-md hover:text-progressive">link 1</a></span>
                 </div>
             </div>
         </div>
     </div>
     <div class="container mx-auto px-6">
         <div class="mt-16 border-t-2 border-offwhite flex flex-col items-center">
-            <div class="sm:w-2/3 text-center py-6">
+            <div class="text-center py-6">
                 <p class="text-sm text-offwhite uppercase font-bold mb-2">
                     © 2021 SaveLend Group AB  •  559097-7046  |  Kammakargatan 7, 111 40 Stockholm  |  +46 (0) 8 12 44 60 67 • investor@savelend.se
                 </p>
