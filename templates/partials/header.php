@@ -3,8 +3,8 @@
         <img src="https://savelendgroup.se/wp-content/uploads/2021/04/savelend_group_darkbg-1.png" width="250" alt="SaveLend Group" class="mx-auto"/>
     </div>
 
-    <?php wp_nav_menu( [
-    'menu'              => "2", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
+    <?php wp_nav_menu([
+    //'menu'              => "2", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
     'menu_class'        => "", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
     'menu_id'           => "", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
     'container'         => "nav", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
@@ -18,7 +18,8 @@
     'echo'              => "", // (bool) Whether to echo the menu or return it. Default true.
     'depth'             => "", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
     'walker'            => "", // (object) Instance of a custom walker class.
+    'theme_location'    => "main", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
     'items_wrap'        => "", // (string) How the list items should be wrapped. Default is a ul with an id and class. Uses printf() format with numbered placeholders.
     'item_spacing'      => "", // (string) Whether to preserve whitespace within the menu's HTML. Accepts 'preserve' or 'discard'. Default 'preserve'.
-]); ?>
+    ]); ?>
 </header>
