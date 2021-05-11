@@ -62,6 +62,7 @@ module.exports = {
         textColor: ['responsive', 'hover', 'focus', 'visited'],
     },
     plugins: [
+        require('@tailwindcss/typography'),
         ({addUtilities}) => {
             const utils = {
                 '.translate-x-half': {
