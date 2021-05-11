@@ -27219,8 +27219,8 @@ svg[hidden] {
 
 .clicky-menu a,
 .clicky-menu button {
-  margin: 0.25em;
-  padding: 1em;
+  margin: 0 0.25em;
+  padding: 0.2em 1em;
   background: transparent;
   --text-opacity: 1;
   color: #e1dece;
@@ -27241,6 +27241,10 @@ svg[hidden] {
   -webkit-box-pack: stretch;
           justify-content: stretch;
   flex-wrap: wrap;
+}
+
+.clicky-menu li:not(.menu-item-has-children) > svg {
+  display: none;
 }
 
 .clicky-menu > li > a,
