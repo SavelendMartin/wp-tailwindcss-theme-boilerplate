@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-            <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-challenger text-base font-medium text-white hover:bg-challenger-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-challenger sm:ml-3 sm:w-auto sm:text-sm">
+                <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-challenger text-base font-medium text-white hover:bg-challenger-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-challenger sm:ml-3 sm:w-auto sm:text-sm">
                     Fortsätt
                 </button>
                 <a href="/" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
@@ -109,11 +109,11 @@
 
                             <p class="text-sm text-gray-700 mb-4">Materialet på denna del av webbplatsen får endast distribueras till, och är endast avsedd för, personer i Storbritannien som är "kvalificerade investerare" i enlighet med Prospektförordningen såsom den införlivas i nationell rätt i Storbritannien genom the European Union (Withdrawal) Act 2018, och som är: (i) professionella investerare som omfattas av artikel 19(5) i Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 i dess nuvarande lydelse ("Ordern"); (ii) omfattas av artikel 49(2)(a) – (d) i Ordern; eller (iii) andra personer som lagligen kan ta del av informationen (samtliga sådana personer benämns tillsammans som "Relevanta Personer"). I Storbritannien är materialet som du önskar tillgång till endast riktat till Relevanta Personer och personer som inte är Relevanta Personer ska inte agera utifrån eller förlita sig på detta. En investering eller en investeringsåtgärd som detta material avser är enbart tillgänglig i Storbritannien för Relevanta Personer och kommer endast att genomföras med sådana personer. Åtkomst till informationen och dokumenten på följande webbsidor kan vara olaglig i vissa jurisdiktioner, och endast vissa kategorier av personer kan tillåtas åtkomst till sådan information och sådana dokument. Samtliga personer bosatta utanför Sverige som önskar åtkomst till dokumenten på denna webbplats måste först försäkra sig om att de inte är föremål för lokala lagar eller bestämmelser som förbjuder eller inskränker deras rätt till åtkomst av denna webbplats, eller kräver registrering eller godkännande av något förvärv av Värdepapper av dem. Sådan registrering eller sådant godkännande har inte inhämtats utanför Sverige. SaveLend Group tar inget ansvar för någon persons brott mot tillämpliga lagar och bestämmelser.</p>
 
-                            <p class="text-sm text-gray-700 mb-2"><strong class="font-bold">Jag intygar därför att:</strong>
-                                <ol class="list-decimal">
-                                    <li>Jag är bosatt och befinner mig utanför USA, Australien, Hongkong, Japan, Kanada, Nya Zeeland, Singapore, Sydafrika och någon annan jurisdiktion där offentliggörande och distribution, direkt eller indirekt, helt eller delvis, av informationen på denna del av webbplatsen skulle vara olaglig eller kräva ytterligare registrering eller andra åtgärder än vad som krävs enligt svensk lag, och</li>
-                                    <li>Jag är bosatt och befinner mig (a) i Sverige eller (b) utanför Sverige och varje jurisdiktion som omnämns under punkten (1) ovan och, under sådana omständigheter, är jag behörig att ta del av informationen och dokumenten på denna webbplats utan begränsning enligt lag och utan att ytterligare åtgärder behöver vidtas av SaveLend Group.</li>
-                                </ol>
+                            <p class="text-sm text-gray-700 mb-2"><strong class="font-bold">Jag intygar därför att:</strong></p>
+                            <ol class="list-decimal">
+                                <li>Jag är bosatt och befinner mig utanför USA, Australien, Hongkong, Japan, Kanada, Nya Zeeland, Singapore, Sydafrika och någon annan jurisdiktion där offentliggörande och distribution, direkt eller indirekt, helt eller delvis, av informationen på denna del av webbplatsen skulle vara olaglig eller kräva ytterligare registrering eller andra åtgärder än vad som krävs enligt svensk lag, och</li>
+                                <li>Jag är bosatt och befinner mig (a) i Sverige eller (b) utanför Sverige och varje jurisdiktion som omnämns under punkten (1) ovan och, under sådana omständigheter, är jag behörig att ta del av informationen och dokumenten på denna webbplats utan begränsning enligt lag och utan att ytterligare åtgärder behöver vidtas av SaveLend Group.</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -122,6 +122,32 @@
                 <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-challenger text-base font-medium text-white hover:bg-challenger-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-challenger sm:ml-3 sm:w-auto sm:text-sm">
                     Acceptera
                 </button>
+                <a href="/" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                    Tillbaka
+                </a>
+            </div>
+        </div>
+
+        <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl sm:w-full">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+                    <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                        <!-- Heroicon name: outline/exclamation -->
+                        <svg class="h-6 w-6 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                    </div>
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                            Tyvärr
+                        </h3>
+                        <div class="mt-2">
+                            Informationen på denna del av SaveLend Groups webbplats är begränsad och får inte, direkt eller indirekt, helt eller delvis, offentliggöras, publiceras eller distribueras inom eller till USA, Australien, Hongkong, Japan, Kanada, Nya Zeeland, Singapore eller Sydafrika. Vi beklagar den olägenhet detta kan medföra.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                 <a href="/" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
                     Tillbaka
                 </a>
