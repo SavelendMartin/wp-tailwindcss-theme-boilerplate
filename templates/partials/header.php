@@ -1,6 +1,6 @@
 <header class="">
     <div class="text-center bg-progressive py-4">
-        SaveLend Group
+        <img src="https://savelendgroup.se/wp-content/uploads/2021/04/savelend_group_darkbg-1.png" width="300" alt="SaveLend Group" />
     </div>
 
     <nav class="bg-challenger flex justify-center items-center py-4 px-4">
