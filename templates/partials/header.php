@@ -3,7 +3,7 @@
         <img src="https://savelendgroup.se/wp-content/uploads/2021/04/savelend_group_darkbg-1.png" width="250" alt="SaveLend Group" class="mx-auto"/>
     </div>
 
-    <?php wp_nav_menu([
+    <?php echo wp_nav_menu([
     'menu'              => "2", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
     'menu_class'        => "", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
     'menu_id'           => "", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
