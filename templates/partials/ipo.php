@@ -1,3 +1,5 @@
+<?php get_template_part( 'templates/partials/ipopopup'); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'prose mx-auto py-12' ); ?>>
 
 	<header class="">
