@@ -1,6 +1,6 @@
 <?php get_template_part( 'templates/partials/ipopopup'); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'prose mx-auto py-12' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?>>
 
 	<!--<header class="">
 		<?php //the_title('<h1>', '</h1>' ); ?>
