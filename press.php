@@ -53,7 +53,7 @@ get_header();
 
         // 'default' (:regulatory, sub:report:annual, sub:report:interim)
         // or add your own eg [{tag: ':regulatory'}]
-        show_tags: 'default',
+        show_tags: [{tag: ':regulatory'}],
 
         // Show attachments
         show_attachments: true,
