@@ -1,7 +1,13 @@
 <header class="">
     <div class="text-center bg-progressive py-4">
         <img src="https://savelendgroup.se/wp-content/uploads/2021/04/savelend_group_darkbg-1.png" width="250" alt="SaveLend Group" class="mx-auto"/>
-    </div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg"  hidden>
+  <symbol id="arrow" viewbox="0 0 16 16" >
+    <polyline points="4 6, 8 10, 12 6" stroke="#000" stroke-width="2" fill="transparent" stroke-linecap="round" />
+  </symbol>
+</svg>
 
     <?php wp_nav_menu([
     'menu'              => "Main Menu", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
@@ -11,7 +17,7 @@
     'container_class'   => "bg-challenger flex justify-center items-center py-4 px-4", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
     //'container_id'      => "", // (string) The ID that is applied to the container.
     //'before'            => "", // (string) Text before the link markup.
-    //'after'             => "", // (string) Text after the link markup.
+    'after'             => "<svg aria-hidden=\"true\" width=\"16\" height=\"16\"> <use xlink:href=\"#arrow\" /></svg>", // (string) Text after the link markup.
     //'link_before'       => "", // (string) Text before the link text.
     //'link_after'        => "", // (string) Text after the link text.
     'echo'              => true, // (bool) Whether to echo the menu or return it. Default true.
