@@ -62,7 +62,8 @@ get_header();
         clickable_tags: true,
 
         // Toolbar
-        toolbar: [{
+        toolbar: [
+            /*{
                 // show search
                 item: 'search',
                 // placeholder text for input search field
@@ -82,19 +83,19 @@ get_header();
                 ],
             },
             // 'default' or [{tag: ':regulatory'},
-            // {tag: 'sub:report:interim'}] etc.
+            // {tag: 'sub:report:interim'}] etc.*/
             {
                 item: 'tags',
                 tags: 'default'
             },
-            {
+            /*{
                 item: 'year',
                 start: 2010
             },
             {
                 item: 'lang',
                 languages: ['sv', 'en']
-            }
+            }*/
         ],
         // Your own local to override text selection or add for
         // other l10n languages (For the toolbar text and tags)
