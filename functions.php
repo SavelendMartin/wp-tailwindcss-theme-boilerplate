@@ -1,8 +1,8 @@
 <?php
 
 
-use SavelendGroupTheme\AutoLoader;
-use SavelendGroupTheme\View;
+use SavelendGroupTheme\ AutoLoader;
+use SavelendGroupTheme\ View;
 
 
 /*
@@ -14,11 +14,63 @@ use SavelendGroupTheme\View;
  * i.e; If a class named SomeClass is stored in app/SomeDir/SomeClass.php, there is no need to include/require that file
  * as the autoloader will handle that for you.
  */
-require get_stylesheet_directory() . '/app/AutoLoader.php';
+require get_stylesheet_directory().'/app/AutoLoader.php';
 $loader = new AutoLoader();
-$loader->register();
-$loader->addNamespace( 'SavelendGroupTheme', get_stylesheet_directory() . '/app' );
+$loader -> register();
+$loader -> addNamespace('SavelendGroupTheme', get_stylesheet_directory().'/app');
 
-View::$view_dir = get_stylesheet_directory() . '/templates/views';
+View::$view_dir = get_stylesheet_directory().'/templates/views';
 
-require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
+require get_stylesheet_directory().'/includes/scripts-and-styles.php';
+
+
+function register_custom_widget_areas() {
+    register_sidebar(
+        array(
+            'id' => 'footer-area-1',
+            'name' => esc_html__('Footer area 1', 'savelendgroup'),
+            'description' => esc_html__('A new widget area made for testing purposes', 'savelendgroup'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<div class="widget-title-holder"><h3 class="widget-title">',
+            'after_title' => '</h3></div>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'id' => 'footer-area-2',
+            'name' => esc_html__('Footer area 2', 'savelendgroup'),
+            'description' => esc_html__('A new widget area made for testing purposes', 'savelendgroup'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<div class="widget-title-holder"><h3 class="widget-title">',
+            'after_title' => '</h3></div>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'id' => 'footer-area-3',
+            'name' => esc_html__('Footer area 3', 'savelendgroup'),
+            'description' => esc_html__('A new widget area made for testing purposes', 'savelendgroup'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<div class="widget-title-holder"><h3 class="widget-title">',
+            'after_title' => '</h3></div>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'id' => 'footer-area-4',
+            'name' => esc_html__('Footer area 4', 'savelendgroup'),
+            'description' => esc_html__('A new widget area made for testing purposes', 'savelendgroup'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<div class="widget-title-holder"><h3 class="widget-title">',
+            'after_title' => '</h3></div>'
+        )
+    );
+}
+add_action('widgets_init', 'register_custom_widget_areas');
