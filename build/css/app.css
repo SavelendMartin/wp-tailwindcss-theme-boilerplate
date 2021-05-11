@@ -27245,7 +27245,7 @@ svg[hidden] {
           align-items: center;
 }
 
-.clicky-menu li:not(.menu-item-has-children) > svg {
+.clicky-menu li:not(.menu-item-has-children) svg {
   display: none;
 }
 

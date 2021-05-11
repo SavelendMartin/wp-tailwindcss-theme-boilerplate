@@ -103,7 +103,7 @@
   }
 
   .clicky-menu li {
-      &:not(.menu-item-has-children) > svg {
+      &:not(.menu-item-has-children) svg {
           display: none;
       }
   }
