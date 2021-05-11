@@ -1,5 +1,5 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+<div class="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" id="modal" role="dialog" aria-modal="true">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
         <!--
       Background overlay, show/hide based on modal state.
@@ -117,10 +117,10 @@
                         </div>
                         <div class="flex items-start">
                             <div class="flex items-center h-5">
-                                <input id="comments" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                <input id="acceptCheck" name="acceptCheck" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
                             </div>
                             <div class="ml-3 text-sm">
-                                <label for="comments" class="font-medium text-gray-900 font-bold">Jag har läst, förstått och samtycker till att följa samtliga restriktioner som framgår ovan.</label>
+                                <label for="acceptCheck" class="font-medium text-gray-900 font-bold">Jag har läst, förstått och samtycker till att följa samtliga restriktioner som framgår ovan.</label>
                             </div>
                         </div>
                     </div>
@@ -165,12 +165,15 @@
 </div>
 
 <script>
+var modal = document.getElementById('modal');
 var popup1 = document.getElementById('popup1');
 var popup2 = document.getElementById('popup2');
 var popup3 = document.getElementById('popup3');
 
 var country1 = document.getElementById('country1');
 var country2 = document.getElementById('country1');
+
+var acceptCheck = document.getElementById('acceptCheck');
 
 var continueBtn = document.getElementById('continue');
 var acceptBtn = document.getElementById('accept');
@@ -179,13 +182,22 @@ continueBtn.addEventListener('click', function(){
     var country1val = country1.value;
     var country2val = country2.value;
 
-    if(country1val != '' && country2val != '') {
+    if(country1val != '' || country2val != '') {
         popup1.classList.add('hidden');
         popup2.classList.remove('hidden');
     }
     else {
         popup1.classList.add('hidden');
         popup3.classList.remove('hidden');
+    }
+});
+
+acceptBtn.addEventListener('click', function(){
+    if(acceptCheck.checked) {
+        modal.classList.add('hidden');
+    }
+    else {
+       
     }
 });
 
