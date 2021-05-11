@@ -142,14 +142,14 @@
                             Tyvärr
                         </h3>
                         <div class="mt-2">
-                            Informationen på denna del av SaveLend Groups webbplats är begränsad och får inte, direkt eller indirekt, helt eller delvis, offentliggöras, publiceras eller distribueras inom eller till USA, Australien, Hongkong, Japan, Kanada, Nya Zeeland, Singapore eller Sydafrika. Vi beklagar den olägenhet detta kan medföra.
+                            <p class="mb-4">Informationen på denna del av SaveLend Groups webbplats är begränsad och får inte, direkt eller indirekt, helt eller delvis, offentliggöras, publiceras eller distribueras inom eller till USA, Australien, Hongkong, Japan, Kanada, Nya Zeeland, Singapore eller Sydafrika. Vi beklagar den olägenhet detta kan medföra.</p>
                         </div>
                         <div class="flex items-start">
                             <div class="flex items-center h-5">
                                 <input id="comments" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
                             </div>
                             <div class="ml-3 text-sm">
-                                <label for="comments" class="font-medium text-gray-700">Jag har läst, förstått och samtycker till att följa samtliga restriktioner som framgår ovan.</label>
+                                <label for="comments" class="font-medium text-gray-900 font-bold">Jag har läst, förstått och samtycker till att följa samtliga restriktioner som framgår ovan.</label>
                             </div>
                         </div>
                     </div>
