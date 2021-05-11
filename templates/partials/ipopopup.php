@@ -41,12 +41,12 @@
             Disclaimer
             </h3>
             <div class="mt-2">
-              <p class="text-sm text-gray-700">
+              <p class="text-sm text-gray-700 mb-8">
               Informationen på denna del av SaveLend Groups webbplats är begränsad och får inte, direkt eller indirekt, helt eller delvis, offentliggöras, publiceras eller distribueras inom eller till USA, Australien, Hongkong, Japan, Kanada, Nya Zeeland, Singapore, Sydafrika eller någon annan jurisdiktion där sådant offentliggörande, publicering eller distribution skulle vara olaglig eller kräva ytterligare registrering eller andra åtgärder än vad som krävs enligt svensk lag.
               </p>
 
               <label class="font-bold mb-2 uppercase">Ange det land du är bosatt i:</label>
-              <select class="w-full mb-8">
+              <select class="w-full mb-8 p-4 border">
                 <option value="">Sverige</option>
                 <option value="">USA</option>
                 <option value="">Australien </option>
@@ -60,7 +60,7 @@
               </select>
 
               <label class="font-bold mb-2 uppercase">Ange det land du befinner dig i:</label>
-              <select class="w-full mb-8">
+              <select class="w-full mb-8 p-4 border">
                 <option value="">Sverige</option>
                 <option value="">USA</option>
                 <option value="">Australien </option>
