@@ -1,5 +1,3 @@
-<?php get_template_part( 'templates/partials/header'); ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'prose mx-auto py-12' ); ?>>
 
 	<header class="">
@@ -36,5 +34,3 @@
 	<?php endif; ?>
 
 </article>
-
-<?php get_template_part( 'templates/partials/footer'); ?>
