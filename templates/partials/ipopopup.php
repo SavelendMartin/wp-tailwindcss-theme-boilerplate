@@ -179,8 +179,14 @@ continueBtn.addEventListener('click', function(){
     var country1val = country1.value;
     var country2val = country2.value;
 
-    console.log(country1val);
-    console.log(country2val);
+    if(country1val != '' && country2val != '') {
+        popup1.classList.add('hidden');
+        popup2.classList.remove('hidden');
+    }
+    else {
+        popup1.classList.add('hidden');
+        popup3.classList.remove('hidden');
+    }
 });
 
 </script>
