@@ -1,8 +1,8 @@
 <?php get_template_part( 'templates/partials/header'); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'max-w-screen-lg mx-auto py-12' ); ?>>
 
-	<header class="">
+	<header class="text-4xl mb-8 font-semibold">
 		<?php the_title('<h1>', '</h1>' ); ?>
 	</header>
 
