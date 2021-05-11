@@ -2,9 +2,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'prose mx-auto py-12' ); ?>>
 
-	<header class="">
-		<?php the_title('<h1>', '</h1>' ); ?>
-	</header>
+	<!--<header class="">
+		<?php //the_title('<h1>', '</h1>' ); ?>
+	</header>-->
 
 	<?php if ( is_search() || is_archive() ) : ?>
 
