@@ -27241,6 +27241,8 @@ svg[hidden] {
   -webkit-box-pack: stretch;
           justify-content: stretch;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .clicky-menu li:not(.menu-item-has-children) > svg {
