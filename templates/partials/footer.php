@@ -1,11 +1,38 @@
-<footer class="">
-    <div class="text-center bg-challenger py-4">
-        <img src="https://savelendgroup.se/wp-content/uploads/2021/04/savelend_group_darkbg-1.png" width="250" alt="SaveLend Group" class="mx-auto"/>
-</div>
+<footer class="footer bg-challenger relative pt-1 border-b-2 border-progressive">
+    <div class="container mx-auto px-6">
 
-<svg xmlns="http://www.w3.org/2000/svg"  hidden>
-  <symbol id="arrow" viewbox="0 0 16 16" >
-    <polyline points="4 6, 8 10, 12 6" stroke="currentColor" stroke-width="2" fill="transparent" stroke-linecap="round" />
-  </symbol>
-</svg>
+        <div class="sm:flex sm:mt-8">
+            <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+                <div class="flex flex-col">
+                    <span class="font-bold text-offwhite uppercase mb-2">Footer header 1</span>
+                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-offwhite uppercase mt-4 md:mt-0 mb-2">Footer header 2</span>
+                    <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">link 1</a></span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-offwhite uppercase mt-4 md:mt-0 mb-2">Footer header 3</span>
+                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">link 1</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-6">
+        <div class="mt-16 border-t-2 border-offwhite flex flex-col items-center">
+            <div class="sm:w-2/3 text-center py-6">
+                <p class="text-sm text-progressive font-bold mb-2">
+                    © 2021 SaveLend Group AB  •  559097-7046  |  Kammakargatan 7, 111 40 Stockholm  |  +46 (0) 8 12 44 60 67 • investor@savelend.se
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </footer>
