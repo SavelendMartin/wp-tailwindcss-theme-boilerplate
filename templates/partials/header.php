@@ -117,7 +117,7 @@ const ClickyMenus = function( menu ) {
   }
 
   function closeOpenMenu( e ) {
-
+    console.log(container);
     if ( currentMenuItem && ! e.target.closest( '#' + container.id ) ) {
       toggleSubmenu( currentMenuItem );
     }
