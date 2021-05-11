@@ -165,6 +165,7 @@ svg[hidden] {
     .clicky-menu ul[aria-hidden="false"] {
         position: absolute;
         width: auto;
+        z-index: 30;
     }
 }
 
