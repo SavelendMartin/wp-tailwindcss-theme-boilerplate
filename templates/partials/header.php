@@ -5,18 +5,18 @@
 
     <?php wp_nav_menu([
     'menu'              => "Main Menu", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
-    'menu_class'        => "", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
-    'menu_id'           => "", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
+    //'menu_class'        => "", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+    //'menu_id'           => "", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
     'container'         => "nav", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
     'container_class'   => "bg-challenger flex justify-center items-center py-4 px-4", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
-    'container_id'      => "", // (string) The ID that is applied to the container.
-    'before'            => "", // (string) Text before the link markup.
-    'after'             => "", // (string) Text after the link markup.
-    'link_before'       => "", // (string) Text before the link text.
-    'link_after'        => "", // (string) Text after the link text.
+    //'container_id'      => "", // (string) The ID that is applied to the container.
+    //'before'            => "", // (string) Text before the link markup.
+    //'after'             => "", // (string) Text after the link markup.
+    //'link_before'       => "", // (string) Text before the link text.
+    //'link_after'        => "", // (string) Text after the link text.
     'echo'              => true, // (bool) Whether to echo the menu or return it. Default true.
     'depth'             => "0", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
     //'theme_location'    => "main", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
-    'items_wrap'        => "", // (string) How the list items should be wrapped. Default is a ul with an id and class. Uses printf() format with numbered placeholders.
+    //'items_wrap'        => "", // (string) How the list items should be wrapped. Default is a ul with an id and class. Uses printf() format with numbered placeholders.
     ]); ?>
 </header>
