@@ -45,7 +45,7 @@
                             </p>
 
                             <label class="font-bold mb-2 uppercase">Ange det land du är bosatt i:</label>
-                            <select class="w-full mb-8 p-4 border">
+                            <select class="block w-full py-2 px-3 border border-gray-300 mb-8">
                                 <option value="">Sverige</option>
                                 <option value="">USA</option>
                                 <option value="">Australien </option>
@@ -59,7 +59,7 @@
                             </select>
 
                             <label class="font-bold mb-2 uppercase">Ange det land du befinner dig i:</label>
-                            <select class="w-full mb-8 p-4 border">
+                            <select class="block w-full py-2 px-3 border border-gray-300 mb-8">
                                 <option value="">Sverige</option>
                                 <option value="">USA</option>
                                 <option value="">Australien </option>
