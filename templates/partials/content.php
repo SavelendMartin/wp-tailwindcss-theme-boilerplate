@@ -1,8 +1,8 @@
 <?php get_template_part( 'templates/partials/header'); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'prose lg:prose-xl mx-auto py-12' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'prose mx-auto py-12' ); ?>>
 
-	<header class="text-4xl mb-8 font-semibold">
+	<header class="">
 		<?php the_title('<h1>', '</h1>' ); ?>
 	</header>
 
