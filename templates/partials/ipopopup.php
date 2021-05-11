@@ -45,8 +45,8 @@
                             </p>
 
                             <label class="font-bold mb-2 uppercase">Ange det land du är bosatt i:</label>
-                            <select class="block w-full py-2 px-3 border border-gray-300 mb-8">
-                                <option value="">Sverige</option>
+                            <select id="country1" class="block w-full py-2 px-3 border border-gray-300 mb-8">
+                                <option value="sweden">Sverige</option>
                                 <option value="">USA</option>
                                 <option value="">Australien </option>
                                 <option value="">Hongkong</option>
@@ -55,12 +55,12 @@
                                 <option value="">Nya Zeeland </option>
                                 <option value="">Singapore</option>
                                 <option value="">Sydafrika</option>
-                                <option value="">Övriga länder</option>
+                                <option value="other">Övriga länder</option>
                             </select>
 
                             <label class="font-bold mb-2 uppercase">Ange det land du befinner dig i:</label>
-                            <select class="block w-full py-2 px-3 border border-gray-300 mb-8">
-                                <option value="">Sverige</option>
+                            <select id="country2" class="block w-full py-2 px-3 border border-gray-300 mb-8">
+                                <option value="sweden">Sverige</option>
                                 <option value="">USA</option>
                                 <option value="">Australien </option>
                                 <option value="">Hongkong</option>
@@ -69,14 +69,14 @@
                                 <option value="">Nya Zeeland </option>
                                 <option value="">Singapore</option>
                                 <option value="">Sydafrika</option>
-                                <option value="">Övriga länder</option>
+                                <option value="other">Övriga länder</option>
                             </select>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-challenger text-base font-medium text-white hover:bg-challenger-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-challenger sm:ml-3 sm:w-auto sm:text-sm">
+                <button id="continue" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-challenger text-base font-medium text-white hover:bg-challenger-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-challenger sm:ml-3 sm:w-auto sm:text-sm">
                     Fortsätt
                 </button>
                 <a href="/" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
@@ -127,7 +127,7 @@
                 </div>
             </div>
             <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-challenger text-base font-medium text-white hover:bg-challenger-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-challenger sm:ml-3 sm:w-auto sm:text-sm">
+                <button id="accept" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-challenger text-base font-medium text-white hover:bg-challenger-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-challenger sm:ml-3 sm:w-auto sm:text-sm">
                     Acceptera
                 </button>
                 <a href="/" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
@@ -163,3 +163,16 @@
         </div>
     </div>
 </div>
+
+<script>
+var country1 = document.getElementById('country1');
+var country2 = document.getElementById('country1');
+
+var continueBtn = document.getElementById('continue');
+var acceptBtn = document.getElementById('accept');
+
+continueBtn.addEventListener('click', function(){
+    alert('click');
+});
+
+</script>
