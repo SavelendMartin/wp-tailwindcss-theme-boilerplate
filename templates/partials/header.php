@@ -12,10 +12,10 @@
     <?php wp_nav_menu([
     'menu'              => "Main Menu", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
     'menu_class'        => "main-menu clicky-menu no-js", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
-    'menu_id'           => "site-navigation", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
+    //'menu_id'           => "site-navigation", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
     'container'         => "nav", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
     'container_class'   => "bg-challenger flex justify-center items-center py-4 px-4", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
-    //'container_id'      => "", // (string) The ID that is applied to the container.
+    'container_id'      => "site-navigation", // (string) The ID that is applied to the container.
     //'before'            => "", // (string) Text before the link markup.
     //'after'             => "", // (string) Text after the link markup.
     //'link_before'       => "", // (string) Text before the link text.
