@@ -10,6 +10,8 @@ add_action( 'wp_enqueue_scripts', function () {
 	wp_register_style( 'app', AssetResolver::resolve( 'css/app.css' ), [], false );
 	wp_register_script( 'app', AssetResolver::resolve( 'js/app.js' ), [], false, true );
 
+	add_editor_style( AssetResolver::resolve( 'css/editor.css' ) );
+
 	// enqueue global assets
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_style( 'app' );

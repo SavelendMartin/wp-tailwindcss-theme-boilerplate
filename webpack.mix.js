@@ -26,6 +26,7 @@ if (local.proxy) {
 mix.tailwind();
 mix.js('assets/js/app.js', 'js');
 mix.sass('assets/scss/app.scss', 'css');
+mix.sass('assets/scss/editor.scss', 'css');
 
 if (mix.inProduction()) {
     mix.versionHash();
