@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'prose mx-auto py-12' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'prose mx-auto py-12 px-6 sm:px-0' ); ?>>
 
 	<header class="">
 		<?php the_title('<h1>', '</h1>' ); ?>
