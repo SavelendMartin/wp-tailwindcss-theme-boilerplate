@@ -65,11 +65,18 @@ svg[hidden] {
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 100%;
 }
 
 @media (min-width: 540px) {
     .clicky-menu {
         display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .clicky-menu {
+        width: auto;
     }
 }
 
