@@ -6,7 +6,9 @@
 
 ?>
 
-<div class="w-full bg-cover bg-no-repeat h-64 md:h-80 bg-center relative mb-32 angled" style="background-image: url('<?php block_field( 'image-background', true ); ?>')">
+<div class="w-full bg-cover bg-no-repeat h-64 md:h-80 bg-center relative mb-52 angled" style="background-image: url('<?php block_field( 'image-background', true ); ?>')">
+<h1 class="text-center font-bold text-6xl text-offwhite-400 pt-12">IPO 2021
+        <span class="block text-base pt-4 text-offwhite-400">Inbjudan till att teckna aktier i SaveLend Group AB</span></h1>
 <svg class="w-full h-10 absolute bottom-0 left-0 z-10 text-offwhite-400" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" preserveAspectRatio="none">
     <polygon points="16,0 16,16 0,16" fill="currentColor"/>
 </svg>
