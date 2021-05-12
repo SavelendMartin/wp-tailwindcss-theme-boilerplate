@@ -43,7 +43,7 @@ get_header();
         entity_id: '14e18a8e-0c96-4ef7-a67a-ba508cf74fa0',
 
         // Path to the page where a single view version has been implemented
-        single_view_url: 'index.php/pressreleaser/visa',
+        single_view_url: '/pressreleaser/visa',
 
         // Default limit of items shown
         limit: 20,
