@@ -22,6 +22,9 @@ add_action( 'wp_enqueue_scripts', function () {
  * Registers an editor stylesheet for the theme.
  */
 function wpdocs_theme_add_editor_styles() {
+
+	add_theme_support( 'editor-styles' ); // if you don't add this line, your stylesheet won't be added
+
     add_editor_style( AssetResolver::resolve( 'css/editor.css' ) );
 }
-add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+add_action( 'after_setup_theme', 'wpdocs_theme_add_editor_styles' );

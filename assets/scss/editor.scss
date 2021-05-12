@@ -11,6 +11,13 @@
     @apply border border-dashed;
 }
 
-#editor div.block-editor-writing-flow {
+/*#editor div.block-editor-writing-flow {
     max-width: 100% !important;
+}*/
+
+.wp-block{
+    max-width: 95%;
+}
+.wp-block[data-align=wide] { /* it can be "data-align=full" and also "right", "left" and "center" */
+    max-width: 100%;
 }
