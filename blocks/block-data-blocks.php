@@ -4,3 +4,17 @@ $stockTableRaw = callAPI('GET', 'https://api2.savelend.se/datablocks/stock-table
 $stockTable = json_decode($stockTableRaw);
 
 var_dump($stockTable);
+
+?>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div id="deltaToday" class="">
+        SBL Finans (SEK)
+        <?php echo $stockTable['stocks'][0]['latestPrice'] ?>
+    </div>
+
+    <div id="deltaToday" class="">
+        Senaste förändring
+        <?php echo $stockTable['stocks'][0]['deltaToday']*100 ?> %
+    </div>
+</div>
