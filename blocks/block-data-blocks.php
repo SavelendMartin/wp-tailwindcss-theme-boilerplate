@@ -94,19 +94,21 @@ function formatMoney($n) {
                     <td class="text-right"><?php echo round((1 - $ownerList->ownerSum[0]->votes)*100, 2) ?> %</td>
                     <td class="text-right"></td>
                 </tr>
-
-                <tr>
-                    <td class="text-left" colspan="2">Totala aktiegare</td>
-                    <td class="text-right" colspan=2><?php echo number_format($ownerList->numOfOwners, 0, ',', ' ') ?></td>
-                    <td class="text-right"><?php echo $ownerList->numOfOwnersDate ?></td>
-                </tr>
-
-                <tr>
-                    <td class="text-left" colspan="2">Totala aktier</td>
-                    <td class="text-right" colspan=2><?php echo number_format($ownerList->numOfShares, 0, ',', ' ') ?></td>
-                    <td class="text-right"><?php echo $ownerList->numOfSharesDate ?></td>
-                </tr>
             </tfoot>
+        </table>
+
+        <table class="w-full">
+            <tr>
+                <td class="text-left">Totala aktiegare</td>
+                <td class="text-right"><?php echo number_format($ownerList->numOfOwners, 0, ',', ' ') ?></td>
+                <td class="text-right"><?php echo $ownerList->numOfOwnersDate ?></td>
+            </tr>
+
+            <tr>
+                <td class="text-left">Totala aktier</td>
+                <td class="text-right"><?php echo number_format($ownerList->numOfShares, 0, ',', ' ') ?></td>
+                <td class="text-right"><?php echo $ownerList->numOfSharesDate ?></td>
+            </tr>
         </table>
     </div>
 </div>
