@@ -79,7 +79,7 @@ function formatMoney($n) {
             </tbody>
             <tfoot class="font-bold">
                 <tr>
-                    <td class="p-1 text-left">Total</td>
+                    <td class="p-1 text-left">Total 10</td>
                     <td class="p-1 text-right"><?php echo number_format($ownerList->ownerSum[0]->numOfShares, 0, ',', ' ') ?></td>
                     <td class="p-1 text-right"><?php echo round($ownerList->ownerSum[0]->capital*100, 2) ?> %</td>
                     <td class="p-1 text-right"><?php echo round($ownerList->ownerSum[0]->votes*100, 2) ?> %</td>
