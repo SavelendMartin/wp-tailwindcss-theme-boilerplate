@@ -54,3 +54,23 @@ function formatMoney($n) {
         <div class="text-challenger text-8xl font-bold"><?php echo formatMoney($stockTable->stocks[0]->mcap) ?></div>
     </div>
 </div>
+
+
+<div class="bg-progressive">
+    <div class="max-w-screen-xl mx-auto py-16 px-4">
+        <table>
+        <tr>
+            <th>Namn</th><th>Antal aktier</th><th>Kapital</th><th>Röster</th><th>Verifierad</th>
+        </tr>
+        <?php foreach($ownerList->owners as $owner): ?>
+        <tr>
+            <td><?php echo $owner->ownerName ?></td>
+            <td><?php echo number_format($owner->numOfShares, ',', ' ') ?></td>
+            <td><?php echo round($owner->capital*100) ?></td>
+            <td><?php echo round($owner->votes*100) ?></td>
+            <td><?php echo $owner->holdingDate ?></td>
+        </tr>
+        <?php endforeach; ?>
+        </table>
+    </div>
+</div>
