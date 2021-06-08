@@ -6,8 +6,6 @@ $stockTable = json_decode($stockTableRaw);
 $ownerListRaw = callAPI('GET', 'https://api2.savelend.se/datablocks/owner-list', ['c'=>'bbc48482-1063-43c7-8172-49c79a3072a5', 'token'=>'aa44b943-71ce-460f-81d9-784f9f53abce', 'demo'=>true]);
 $ownerList = json_decode($ownerListRaw);
 
-print_r($ownerList);
-
 function formatMoney($n) {
     $n = (0+str_replace(",","",$n));
        
