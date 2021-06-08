@@ -11,8 +11,8 @@ function formatMoney($n) {
         if(!is_numeric($n)) return false;
        
         // now filter it;
-        if($n>1000000) return round(($n/1000000),1).' MSEK';
-        else if($n>1000) return round(($n/1000),1).' TSEK';
+        if($n>=1000000) return round(($n/1000000),1).' MSEK';
+        else if($n>=1000) return round(($n/1000),1).' TSEK';
        
         return number_format($n, ',', ' ');
 }
