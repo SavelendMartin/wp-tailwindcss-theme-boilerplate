@@ -7,14 +7,24 @@ print_r($stockTable);
 
 ?>
 
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-    <div id="deltaToday" class="">
-        SBL Finans (SEK)
-        <?php echo $stockTable->stocks[0]->latestPrice ?>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-screen-lg mx-auto">
+    <div id="deltaToday" class="bg-progressive rounded text-offwhite">
+        <div class="text-lg mb-3">SBL Finans (SEK)</div>
+        <div class="text-challenger text-3xl"><?php echo $stockTable->stocks[0]->latestPrice ?></div>
     </div>
 
-    <div id="deltaToday" class="">
-        Senaste förändring
-        <?php echo $stockTable->stocks[0]->deltaToday*100 ?> %
+    <div id="deltaToday" class="bg-progressive rounded text-offwhite">
+        <div class="text-lg mb-3">Senaste förändring</div>
+        <div class="text-challenger text-3xl"><?php echo $stockTable->stocks[0]->deltaToday*100 ?>&nbsp%</div>
+    </div>
+
+    <div id="deltaToday" class="bg-progressive rounded text-offwhite">
+        <div class="text-lg mb-3">Lägst</div>
+        <div class="text-challenger text-3xl"><?php echo $stockTable->stocks[0]->minPriceYear ?></div>
+    </div>
+
+    <div id="deltaToday" class="bg-progressive rounded text-offwhite">
+        <div class="text-lg mb-3">Högst</div>
+        <div class="text-challenger text-3xl"><?php echo $stockTable->stocks[0]->maxPriceYear ?></div>
     </div>
 </div>
