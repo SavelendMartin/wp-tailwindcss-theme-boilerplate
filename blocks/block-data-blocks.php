@@ -7,7 +7,7 @@ print_r($stockTable);
 
 ?>
 
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-screen-lg mx-auto my-16 px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-screen-lg mx-auto my-16 px-6">
     <div id="deltaToday" class="bg-progressive rounded text-offwhite p-6">
         <div class="text-lg">SBL Finans</div>
         <div class="text-challenger text-8xl font-bold"><?php echo $stockTable->stocks[0]->latestPrice ?> <span class="text-lg text-offwhite">SEK</span></div>
