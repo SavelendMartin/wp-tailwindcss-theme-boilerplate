@@ -44,12 +44,12 @@ function formatMoney($n) {
         <div class="text-progressive text-8xl font-bold"><?php echo $stockTable->stocks[0]->maxPriceYear ?> <span class="text-xl text-offwhite">(SEK)</span></div>
     </div>
 
-    <div id="deltaToday" class="bg-challenger rounded-lg text-offwhite p-8 col-span-2">
+    <div id="deltaToday" class="bg-challenger rounded-lg text-offwhite p-8 md:col-span-2">
         <div class="text-lg">Förändring i år</div>
         <div class="text-restless text-8xl font-bold"><?php echo $stockTable->stocks[0]->deltaYear*100 ?>&nbsp;%</div>
     </div>
 
-    <div id="deltaToday" class="bg-genuine rounded-lg text-offwhite p-8 col-span-2">
+    <div id="deltaToday" class="bg-genuine rounded-lg text-offwhite p-8 md:col-span-2">
         <div class="text-lg">MCAP</div>
         <div class="text-challenger text-8xl font-bold"><?php echo formatMoney($stockTable->stocks[0]->mcap) ?></div>
     </div>
