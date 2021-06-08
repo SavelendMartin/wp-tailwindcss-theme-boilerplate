@@ -57,20 +57,56 @@ function formatMoney($n) {
 
 
 <div class="bg-progressive">
-    <div class="max-w-screen-xl mx-auto py-16 px-4 text-offwhite">
+    <div class="max-w-screen-lg mx-auto py-16 px-4 text-offwhite">
         <table class="w-full">
-        <tr>
-            <th class="text-left">Namn</th><th class="text-right">Antal aktier</th><th class="text-right">Kapital</th><th class="text-right">Röster</th><th class="text-right">Verifierad</th>
-        </tr>
-        <?php foreach($ownerList->owners as $owner): ?>
-        <tr>
-            <td class="text-left"><?php echo $owner->ownerName ?></td>
-            <td  class="text-right"><?php echo number_format($owner->numOfShares, 0, ',', ' ') ?></td>
-            <td class="text-right"><?php echo round($owner->capital*100, 2) ?> %</td>
-            <td class="text-right"><?php echo round($owner->votes*100, 2) ?> %</td>
-            <td class="text-right"><?php echo $owner->holdingDate ?></td>
-        </tr>
-        <?php endforeach; ?>
+            <thead>
+                <tr>
+                    <th class="text-left">Namn</th>
+                    <th class="text-right">Antal aktier</th>
+                    <th class="text-right">Kapital</th>
+                    <th class="text-right">Röster</th>
+                    <th class="text-right">Verifierad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($ownerList->owners as $owner): ?>
+                <tr>
+                    <td class="text-left"><?php echo $owner->ownerName ?></td>
+                    <td class="text-right"><?php echo number_format($owner->numOfShares, 0, ',', ' ') ?></td>
+                    <td class="text-right"><?php echo round($owner->capital*100, 2) ?> %</td>
+                    <td class="text-right"><?php echo round($owner->votes*100, 2) ?> %</td>
+                    <td class="text-right"><?php echo $owner->holdingDate ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="text-left">Total</td>
+                    <td class="text-right"><?php echo number_format($ownerList->ownerSum[0]->numOfShares, 0, ',', ' ') ?></td>
+                    <td class="text-right"><?php echo round($ownerList->ownerSum[0]->capital*100, 2) ?> %</td>
+                    <td class="text-right"><?php echo round($ownerList->ownerSum[0]->votes*100, 2) ?> %</td>
+                    <td class="text-right"></td>
+                </tr>
+                <tr>
+                    <td class="text-left">Övriga</td>
+                    <td class="text-right"><?php echo number_format($ownerList->numOfShares - $ownerList->ownerSum[0]->numOfShares, 0, ',', ' ') ?></td>
+                    <td class="text-right"><?php echo round(1 - $ownerList->ownerSum[0]->capital*100, 2) ?> %</td>
+                    <td class="text-right"><?php echo round(1 - $ownerList->ownerSum[0]->votes*100, 2) ?> %</td>
+                    <td class="text-right"></td>
+                </tr>
+
+                <tr>
+                    <td class="text-left" colspan="2">Totala aktiegare</td>
+                    <td class="text-right" colspan=2><?php echo number_format(numOfOwners, 0, ',', ' ') ?></td>
+                    <td class="text-right"><?php echo $owner->numOfOwnersDate ?></td>
+                </tr>
+
+                <tr>
+                    <td class="text-left" colspan="2">Totala aktier</td>
+                    <td class="text-right" colspan=2><?php echo number_format(numOfShares, 0, ',', ' ') ?></td>
+                    <td class="text-right"><?php echo $owner->numOfSharesDate ?></td>
+                </tr>
+            </tfoot>
         </table>
     </div>
 </div>
