@@ -11,6 +11,7 @@
  */
 use SavelendGroupTheme\AutoLoader;
 use SavelendGroupTheme\AssetResolver;
+use SavelendGroupTheme\View;
 
 require get_stylesheet_directory() . '/app/AutoLoader.php';
 $loader = new AutoLoader();
