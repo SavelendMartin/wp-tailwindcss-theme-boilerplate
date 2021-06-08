@@ -10,11 +10,11 @@ print_r($stockTable);
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
     <div id="deltaToday" class="">
         SBL Finans (SEK)
-        <?php echo $stockTable['stocks'][0]['latestPrice'] ?>
+        <?php echo $stockTable->stocks[0]->latestPrice ?>
     </div>
 
     <div id="deltaToday" class="">
         Senaste förändring
-        <?php echo $stockTable['stocks'][0]['deltaToday']*100 ?> %
+        <?php echo $stockTable->stocks[0]->deltaToday*100 ?> %
     </div>
 </div>
