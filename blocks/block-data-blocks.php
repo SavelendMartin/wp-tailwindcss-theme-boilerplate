@@ -23,7 +23,7 @@ function formatMoney($n) {
 
 ?>
 
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto my-16 px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto my-16 px-4">
     <div id="deltaToday" class="bg-progressive rounded-lg text-offwhite p-8">
         <div class="text-lg">SBL Finans</div>
         <div class="text-challenger text-8xl font-bold"><?php echo $stockTable->stocks[0]->latestPrice ?> <span class="text-xl text-offwhite">(SEK)</span></div>
@@ -58,7 +58,7 @@ function formatMoney($n) {
 
 <div class="bg-progressive">
     <div class="max-w-screen-lg mx-auto py-16 px-4 text-offwhite">
-        <table class="w-full border-b border-challenger">
+        <table class="w-full border-b border-challenger text-sm md:text-md">
             <thead>
                 <tr>
                     <th class="p-1 text-left">Namn</th>
