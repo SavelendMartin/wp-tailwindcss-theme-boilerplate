@@ -58,7 +58,7 @@ function formatMoney($n) {
 
 <div class="bg-progressive">
     <div class="max-w-screen-lg mx-auto py-16 px-4 text-offwhite">
-        <table class="w-full pb-4 mb-4 border-b border-challenger">
+        <table class="w-full border-b border-challenger">
             <thead>
                 <tr>
                     <th class="text-left">Namn</th>
@@ -87,30 +87,26 @@ function formatMoney($n) {
                     <td class="text-right"><?php echo round($ownerList->ownerSum[0]->votes*100, 2) ?> %</td>
                     <td class="text-right"></td>
                 </tr>
-                <tr>
+                <tr class="border-b border-challenger">
                     <td class="text-left">Övriga</td>
                     <td class="text-right"><?php echo number_format($ownerList->numOfShares - $ownerList->ownerSum[0]->numOfShares, 0, ',', ' ') ?></td>
                     <td class="text-right"><?php echo round((1 - $ownerList->ownerSum[0]->capital)*100, 2) ?> %</td>
                     <td class="text-right"><?php echo round((1 - $ownerList->ownerSum[0]->votes)*100, 2) ?> %</td>
                     <td class="text-right"></td>
                 </tr>
+
+                <tr>
+                    <td class="text-left font-bold">Totala aktiegare</td>
+                    <td class="text-right"><?php echo number_format($ownerList->numOfOwners, 0, ',', ' ') ?></td>
+                    <td class="text-right" colspan="3"><?php echo $ownerList->numOfOwnersDate ?></td>
+                </tr>
+
+                <tr>
+                    <td class="text-left font-bold">Totala aktier</td>
+                    <td class="text-right"><?php echo number_format($ownerList->numOfShares, 0, ',', ' ') ?></td>
+                    <td class="text-right" colspan="3"><?php echo $ownerList->numOfSharesDate ?></td>
+                </tr>
             </tfoot>
-        </table>
-        
-                    
-
-        <table class="w-full">
-            <tr>
-                <td class="text-left font-bold">Totala aktiegare</td>
-                <td class="text-right"><?php echo number_format($ownerList->numOfOwners, 0, ',', ' ') ?></td>
-                <td class="text-right"><?php echo $ownerList->numOfOwnersDate ?></td>
-            </tr>
-
-            <tr>
-                <td class="text-left font-bold">Totala aktier</td>
-                <td class="text-right"><?php echo number_format($ownerList->numOfShares, 0, ',', ' ') ?></td>
-                <td class="text-right"><?php echo $ownerList->numOfSharesDate ?></td>
-            </tr>
         </table>
     </div>
 </div>
