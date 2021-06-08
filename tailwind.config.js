@@ -27,6 +27,15 @@ theme: {
                 '400': '#ebe9df',
                 '500': '#e1dece'
             },
+            restless: {
+                DEFAULT: '#ffbf88'
+            },
+            inclusive: {
+                DEFAULT: '#009b7d'
+            },
+            genuine: {
+                DEFAULT: '#003d4c'
+            },
             link: {
               DEFAULT: '#3182ce',
                 'hover': '#63b3ed',
