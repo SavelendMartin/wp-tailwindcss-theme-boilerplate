@@ -58,7 +58,7 @@ function formatMoney($n) {
 
 <div class="bg-progressive">
     <div class="max-w-screen-lg mx-auto py-16 px-4 text-offwhite">
-        <table class="w-full mb-6">
+        <table class="w-full pb-4 mb-4 border-b border-challenger">
             <thead>
                 <tr>
                     <th class="text-left">Namn</th>
@@ -79,7 +79,7 @@ function formatMoney($n) {
                 </tr>
                 <?php endforeach; ?>
             </tbody>
-            <tfoot class="font-semibold">
+            <tfoot class="font-bold">
                 <tr>
                     <td class="text-left">Total</td>
                     <td class="text-right"><?php echo number_format($ownerList->ownerSum[0]->numOfShares, 0, ',', ' ') ?></td>
@@ -96,16 +96,18 @@ function formatMoney($n) {
                 </tr>
             </tfoot>
         </table>
+        
+                    
 
         <table class="w-full">
             <tr>
-                <td class="text-left font-semibold">Totala aktiegare</td>
+                <td class="text-left font-bold">Totala aktiegare</td>
                 <td class="text-right"><?php echo number_format($ownerList->numOfOwners, 0, ',', ' ') ?></td>
                 <td class="text-right"><?php echo $ownerList->numOfOwnersDate ?></td>
             </tr>
 
             <tr>
-                <td class="text-left font-semibold">Totala aktier</td>
+                <td class="text-left font-bold">Totala aktier</td>
                 <td class="text-right"><?php echo number_format($ownerList->numOfShares, 0, ',', ' ') ?></td>
                 <td class="text-right"><?php echo $ownerList->numOfSharesDate ?></td>
             </tr>
