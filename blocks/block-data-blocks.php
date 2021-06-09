@@ -23,7 +23,7 @@ function formatMoney($n) {
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 max-w-screen-xl mx-auto my-16 px-4">
     <div id="deltaToday" class="bg-progressive rounded-lg text-offwhite p-8">
-        <div class="text-lg">SBL Finans</div>
+        <div class="text-lg">SaveLend Group AB</div>
         <div class="text-challenger text-7xl md:text-8xl font-bold"><?php echo $stockTable->stocks[0]->latestPrice ?> <span class="text-xl text-offwhite">(SEK)</span></div>
     </div>
 
