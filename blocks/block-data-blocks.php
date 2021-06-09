@@ -29,12 +29,12 @@ function formatMoney($n) {
 
     <div id="deltaToday" class="bg-genuine rounded-lg text-offwhite p-8">
         <div class="text-lg">Senaste förändring</div>
-        <div class="text-challenger text-8xl font-bold"><?php echo $stockTable->stocks[0]->deltaToday*100 ?>&nbsp;%</div>
+        <div class="text-challenger text-8xl font-bold"><?php echo round($stockTable->stocks[0]->deltaToday*100,2) ?>&nbsp;%</div>
     </div>
 
     <div id="deltaToday" class="bg-challenger rounded-lg text-offwhite p-8 md:col-span-2">
         <div class="text-lg">Förändring i år</div>
-        <div class="text-restless text-8xl font-bold"><?php echo $stockTable->stocks[0]->deltaYear*100 ?>&nbsp;%</div>
+        <div class="text-restless text-8xl font-bold"><?php echo round($stockTable->stocks[0]->deltaYear*100,2) ?>&nbsp;%</div>
     </div>
 
     <div id="deltaToday" class="bg-genuine rounded-lg text-offwhite p-8 md:col-span-2">
@@ -44,12 +44,12 @@ function formatMoney($n) {
 
     <div id="deltaToday" class="bg-challenger rounded-lg text-offwhite p-8">
         <div class="text-lg">Årslägsta</div>
-        <div class="text-restless text-8xl font-bold"><?php echo $stockTable->stocks[0]->minPriceYear ?> <span class="text-xl text-offwhite">(SEK)</span></div>
+        <div class="text-restless text-8xl font-bold"><?php echo round($stockTable->stocks[0]->minPriceYear,2) ?> <span class="text-xl text-offwhite">(SEK)</span></div>
     </div>
 
     <div id="deltaToday" class="bg-inclusive rounded-lg text-offwhite p-8">
         <div class="text-lg">Årshögsta</div>
-        <div class="text-progressive text-8xl font-bold"><?php echo $stockTable->stocks[0]->maxPriceYear ?> <span class="text-xl text-offwhite">(SEK)</span></div>
+        <div class="text-progressive text-8xl font-bold"><?php echo round($stockTable->stocks[0]->maxPriceYear,2) ?> <span class="text-xl text-offwhite">(SEK)</span></div>
     </div>
 </div>
 
