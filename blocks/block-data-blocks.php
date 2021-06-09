@@ -53,7 +53,7 @@ function formatMoney($n) {
     </div>
 </div>
 
-
+<?php if($ownerList->numOfShares):?>
 <div class="bg-progressive">
     <div class="max-w-screen-lg mx-auto py-16 px-4 text-offwhite">
         <table class="w-full border-b border-challenger text-sm md:text-md">
@@ -112,3 +112,4 @@ function formatMoney($n) {
         </table>
     </div>
 </div>
+<?php endif; ?>
