@@ -94,7 +94,7 @@ function formatMoney($n) {
                 </tr>
 
                 <tr>
-                    <td class="p-1 text-left font-bold">Totala aktiegare</td>
+                    <td class="p-1 text-left font-bold">Totala aktieägare</td>
                     <td class="p-1 text-right"><?php echo number_format($ownerList->numOfOwners, 0, ',', ' ') ?></td>
                     <td class="p-1 text-right" colspan="3"><?php echo $ownerList->numOfOwnersDate ?></td>
                 </tr>
