@@ -85,6 +85,7 @@ function formatMoney($n) {
                     <td class="p-1 text-right"><?php echo round($ownerList->ownerSum[0]->votes*100, 2) ?> %</td>
                     <td class="p-1 text-right"></td>
                 </tr>
+                <?php if($ownerList->numOfShares):?>
                 <tr class="border-b border-challenger">
                     <td class="p-1 text-left">Övriga</td>
                     <td class="p-1 text-right"><?php echo number_format($ownerList->numOfShares - $ownerList->ownerSum[0]->numOfShares, 0, ',', ' ') ?></td>
@@ -92,6 +93,7 @@ function formatMoney($n) {
                     <td class="p-1 text-right"><?php echo round((1 - $ownerList->ownerSum[0]->votes)*100, 2) ?> %</td>
                     <td class="p-1 text-right"></td>
                 </tr>
+                <?php endif; ?>
                 <?php if($ownerList->numOfOwners):?>
                 <tr>
                     <td class="p-1 text-left font-bold">Totala aktieägare</td>
