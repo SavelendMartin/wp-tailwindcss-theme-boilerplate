@@ -24,32 +24,32 @@ function formatMoney($n) {
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 max-w-screen-xl mx-auto my-16 px-4">
     <div id="deltaToday" class="bg-progressive rounded-lg text-offwhite p-8">
         <div class="text-lg">SBL Finans</div>
-        <div class="text-challenger text-8xl font-bold"><?php echo $stockTable->stocks[0]->latestPrice ?> <span class="text-xl text-offwhite">(SEK)</span></div>
+        <div class="text-challenger text-7xl md:text-8xl font-bold"><?php echo $stockTable->stocks[0]->latestPrice ?> <span class="text-xl text-offwhite">(SEK)</span></div>
     </div>
 
     <div id="deltaToday" class="bg-genuine rounded-lg text-offwhite p-8">
         <div class="text-lg">Senaste förändring</div>
-        <div class="text-challenger text-8xl font-bold"><?php echo round($stockTable->stocks[0]->deltaToday*100,2) ?>&nbsp;%</div>
+        <div class="text-challenger text-7xl md:text-8xl font-bold"><?php echo round($stockTable->stocks[0]->deltaToday*100,2) ?>&nbsp;%</div>
     </div>
 
     <div id="deltaToday" class="bg-challenger rounded-lg text-offwhite p-8 md:col-span-2">
         <div class="text-lg">Förändring i år</div>
-        <div class="text-restless text-8xl font-bold"><?php echo round($stockTable->stocks[0]->deltaYear*100,2) ?>&nbsp;%</div>
+        <div class="text-restless text-7xl md:text-8xl font-bold"><?php echo round($stockTable->stocks[0]->deltaYear*100,2) ?>&nbsp;%</div>
     </div>
 
     <div id="deltaToday" class="bg-genuine rounded-lg text-offwhite p-8 md:col-span-2">
         <div class="text-lg">MCAP</div>
-        <div class="text-challenger text-8xl font-bold"><?php echo formatMoney($stockTable->stocks[0]->mcap) ?></div>
+        <div class="text-challenger text-7xl md:text-8xl font-bold"><?php echo formatMoney($stockTable->stocks[0]->mcap) ?></div>
     </div>
 
     <div id="deltaToday" class="bg-challenger rounded-lg text-offwhite p-8">
         <div class="text-lg">Årslägsta</div>
-        <div class="text-restless text-8xl font-bold"><?php echo round($stockTable->stocks[0]->minPriceYear,2) ?> <span class="text-xl text-offwhite">(SEK)</span></div>
+        <div class="text-restless text-7xl md:text-8xl font-bold"><?php echo round($stockTable->stocks[0]->minPriceYear,2) ?> <span class="text-xl text-offwhite">(SEK)</span></div>
     </div>
 
     <div id="deltaToday" class="bg-inclusive rounded-lg text-offwhite p-8">
         <div class="text-lg">Årshögsta</div>
-        <div class="text-progressive text-8xl font-bold"><?php echo round($stockTable->stocks[0]->maxPriceYear,2) ?> <span class="text-xl text-offwhite">(SEK)</span></div>
+        <div class="text-progressive text-7xl md:text-8xl font-bold"><?php echo round($stockTable->stocks[0]->maxPriceYear,2) ?> <span class="text-xl text-offwhite">(SEK)</span></div>
     </div>
 </div>
 
