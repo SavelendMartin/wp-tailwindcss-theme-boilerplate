@@ -111,7 +111,7 @@ function callAPI($method, $url, $data)
         $error_msg = curl_error($curl);
         die($error_msg);
     }
-    if (!$result) {die("Connection Failure");}
+    if (!$result) {die("Connection Failure ".curl_error($curl));}
     curl_close($curl);
     return $result;
 }
