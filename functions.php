@@ -10,7 +10,6 @@
  * as the autoloader will handle that for you.
  */
 use SavelendGroupTheme\AutoLoader;
-use SavelendGroupTheme\AssetResolver;
 use SavelendGroupTheme\View;
 
 require get_stylesheet_directory() . '/app/AutoLoader.php';
@@ -74,8 +73,6 @@ function register_custom_widget_areas()
 }
 add_action('widgets_init', 'register_custom_widget_areas');
 
-
-
 function callAPI($method, $url, $data)
 {
     $curl = curl_init();
@@ -110,6 +107,10 @@ function callAPI($method, $url, $data)
     curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
     // EXECUTE:
     $result = curl_exec($curl);
+    if (curl_errno($curl)) {
+        $error_msg = curl_error($curl);
+        die($error_msg);
+    }
     if (!$result) {die("Connection Failure");}
     curl_close($curl);
     return $result;
